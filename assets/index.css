@@ -8,11 +8,15 @@ a.navbar-brand:visited{
 
 main{
     background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 100%;
 }
 .container{
     background-color: white;
     margin-left: 50px; 
     margin-right: 80%;
+    padding-right: 5%;
     margin-bottom: 20px;
 }
 
@@ -24,5 +28,19 @@ img{
 }
 
 p{
+ font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    border-top: solid  rgb(33, 155, 143);
+    padding: 10px;
+    background-color: gray;
+    
+}
 
+h2{
+    text-align: center;
+    font-size: x-small;
 }
