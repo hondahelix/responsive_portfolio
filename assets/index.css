@@ -1,0 +1,28 @@
+
+a.navbar-brand:visited{
+    color: rgb(33, 155, 143);
+}
+.navbar-nav{
+    float: right;
+}
+
+main{
+    background-color: black;
+}
+.container{
+    background-color: white;
+    margin-left: 50px; 
+    margin-right: 80%;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+    float: left;
+}
+
+p{
+
+}
