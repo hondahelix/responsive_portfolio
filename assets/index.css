@@ -7,7 +7,7 @@ a.navbar-brand:visited{
 }
 
 main{
-    background-color: black;
+    background-image: url("images/cool-background.jpg");
     position: fixed;
     height: 100%;
     width: 100%;
