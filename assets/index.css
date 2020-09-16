@@ -5,23 +5,30 @@ a.navbar-brand:visited{
 .navbar-nav{
     float: right;
 }
-
-main{
-    background-image: url("images/cool-background.jpg");
-    position: fixed;
+body{
     height: 100%;
     width: 100%;
+    position: absolute;
+    bottom: auto;
+    padding-bottom: 20px;
+}
+main{
+    background-image: url("images/cool-background.jpg");
+    padding-bottom: 10%;
+    padding-right: 30%;
 }
 .container{
     background-color: white;
     margin-left: 50px; 
     margin-right: 80%;
     margin-bottom: 20px;
+    height: 80%;
+    padding-bottom: 15px;
 }
 
-img{
-    width: 350px;
-    height: 350px;
+.pull-left img{
+    width: 50%;
+    height: 50%;
     margin-right: 15px;
     float: left;
 }
@@ -32,9 +39,9 @@ p{
  font-family: Arial, Helvetica, sans-serif;
 }
 footer {
-    position: absolute;
     bottom: 0;
     width:100%;
+    position: relative;
     border-top: solid  rgb(33, 155, 143);
     padding: 10px;
     background-color: gray;
@@ -46,5 +53,10 @@ h2{
     font-size: x-small;
 }
 /*Portfolio specific code*/
-
+.col-md-6 img{
+    padding: 15px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
 /* Contact specific code*/
