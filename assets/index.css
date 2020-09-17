@@ -5,16 +5,17 @@ a.navbar-brand:visited{
 .navbar-nav{
     float: right;
 }
+
 body{
     height: 100%;
     width: 100%;
     position: absolute;
-    bottom: auto;
+    bottom: 0;
     padding-bottom: 20px;
 }
 main{
     background-image: url("images/cool-background.jpg");
-    padding-bottom: 10%;
+    padding-bottom: 30%;
     padding-right: 30%;
 }
 .container{
@@ -23,6 +24,8 @@ main{
     margin-right: 80%;
     margin-bottom: 20px;
     height: 80%;
+    /*height: 600px;
+    width: 300px;*/
     padding-bottom: 15px;
 }
 
@@ -54,9 +57,18 @@ h2{
 }
 /*Portfolio specific code*/
 .col-md-6 img{
-    padding: 15px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
     height: 100%;
     width: 100%;
 }
+.col-xs-12 img{
+    padding-bottom: 5px;
+
+}
 /* Contact specific code*/
+
+.social{
+    float: left;
+    padding: 10px;
+}
