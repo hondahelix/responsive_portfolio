@@ -62,13 +62,27 @@ h2{
     height: 80%;
     width: 90%;
 }
+#portfolio-instructions{
+    color: rgb(33, 155, 143);
+}
 
-#project-pictures{
+.project-pictures{
     padding: 5px;
     margin: 5px;
     height: 250px;
 
 }
+#links{
+    display: inline;
+}
+.col-xs-12 p{
+    color: rgb(33, 155, 143);
+    margin-left: 20px;
+}
+.col-xs-12 p:hover{
+    color: blue;
+}
+
 
 /* Contact specific code*/
 

@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -41,28 +42,35 @@
             <div class="row">
                 <div class="col-md-12"> 
                     <h1>Portfolio</h1>
+                    <p id ="portfolio-instructions">Click on the project name to go to github repo and click on the picture to see the site!</p>
                 </div>
             </div>
             <hr>
-            <div class="row left-content">
+            <div class="row">
                 <div class="col-xs-12"> 
-                    <img id = project-pictures src="assets/images/project1ss.png" alt="Project one screenshot">
+                    <!--<a id = links href="https://github.com/hondahelix/drink-to-the-weather">Drink To The Weather</a>-->
+                    <p id ="link1">Drink To The Weather</p>
+                    <img id = "example1" class = project-pictures src="assets/images/project1ss.png" alt="Project one screenshot">
                 </div>
                 <div class="col-xs-12 "> 
-                    <img id = project-pictures src="assets/images/codeQuiz.PNG" alt="Code Quiz">
-                </div>
-            </div>
-            <div class="row left-content">
-                <div class="col-xs-12 "> 
-                    <img id = project-pictures src="assets/images/scheduler.PNG" alt="Work Day Scheduler">
-                </div>
-                <div class="col-xs-12 "> 
-                    <img id = project-pictures src="" alt="">
+                    <!--<a id = links href="https://github.com/hondahelix/code_quiz">Code Quiz</a>-->
+                    <p id = "link2">Code Quiz</p>
+                    <img id = "example2" class = project-pictures src="assets/images/codeQuiz.PNG" alt="Code Quiz">
                 </div>
             </div>
             <div class="row left-content">
                 <div class="col-xs-12 "> 
-                    <img id = project-pictures src="" alt="">
+                    <!--<a id = links href="https://github.com/hondahelix/work_day_scheduler">Work Day Scheduler</a>-->
+                    <p id = "link3">Work Day Scheduler</p>
+                    <img id = "example3" class = project-pictures src="assets/images/scheduler.PNG" alt="Work Day Scheduler">
+                </div>
+                <div class="col-xs-12 "> 
+                    <img id = "example4" class = project-pictures src="" alt="">
+                </div>
+            </div>
+            <div class="row left-content">
+                <div class="col-xs-12 "> 
+                    <img id = "example5" class = project-pictures src="" alt="">
                 </div>
                 <div class="col-xs-12 "></div>
             </div>
@@ -81,5 +89,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            const linkArray = ["https://github.com/hondahelix/drink-to-the-weather", "https://github.com/hondahelix/code_quiz","https://github.com/hondahelix/work_day_scheduler"];
+            const toSite = ["https://hondahelix.github.io/drink-to-the-weather/","https://hondahelix.github.io/code_quiz/","https://hondahelix.github.io/work_day_scheduler/"];
+            $("p").click(function(){
+                //console.log(this.id);
+                if(this.id=="link1") window.open(linkArray[0]);
+                else if(this.id=="link2") window.open(linkArray[1]);
+                else if(this.id=="link3") window.open(linkArray[2]);
+            });
+            $("img").click(function(){
+                if(this.id=="example1") window.open(toSite[0]);
+                else if(this.id=="example2") window.open(toSite[1]);
+                else if(this.id=="example3") window.open(toSite[2]);
+            });
+        });
+
+
+    </script>
 
 </html>
