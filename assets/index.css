@@ -26,7 +26,6 @@ main{
     height: 80%;
     /*height: 600px;
     width: 300px;*/
-    padding-bottom: 15px;
 }
 
 .pull-left img{
@@ -56,16 +55,21 @@ h2{
     font-size: x-small;
 }
 /*Portfolio specific code*/
-.col-md-6 img{
+#portfolio-container{
+    background-color: white;
+    margin-left: 50px; 
+    margin-bottom: 20px;
+    height: 80%;
+    width: 90%;
+}
+
+#project-pictures{
     padding: 5px;
     margin: 5px;
-    height: 100%;
-    width: 100%;
-}
-.col-xs-12 img{
-    padding-bottom: 5px;
+    height: 250px;
 
 }
+
 /* Contact specific code*/
 
 .social{
