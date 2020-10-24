@@ -65,7 +65,8 @@
                     <img id = "example3" class = project-pictures src="assets/images/scheduler.PNG" alt="Work Day Scheduler">
                 </div>
                 <div class="col-xs-12 "> 
-                    <img id = "example4" class = project-pictures src="" alt="">
+                    <p id = "link4">Burger!</p>
+                    <img id = "example4" class = project-pictures src="assets/images/burger-image.PNG" alt="burger app">
                 </div>
             </div>
             <div class="row left-content">
@@ -91,18 +92,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            const linkArray = ["https://github.com/hondahelix/drink-to-the-weather", "https://github.com/hondahelix/code_quiz","https://github.com/hondahelix/work_day_scheduler"];
-            const toSite = ["https://hondahelix.github.io/drink-to-the-weather/","https://hondahelix.github.io/code_quiz/","https://hondahelix.github.io/work_day_scheduler/"];
+            const linkArray = ["https://github.com/hondahelix/drink-to-the-weather", "https://github.com/hondahelix/code_quiz","https://github.com/hondahelix/work_day_scheduler","https://github.com/hondahelix/burger"];
+            const toSite = ["https://hondahelix.github.io/drink-to-the-weather/","https://hondahelix.github.io/code_quiz/","https://hondahelix.github.io/work_day_scheduler/","https://evening-plains-49855.herokuapp.com"];
             $("p").click(function(){
                 //console.log(this.id);
                 if(this.id=="link1") window.open(linkArray[0]);
                 else if(this.id=="link2") window.open(linkArray[1]);
                 else if(this.id=="link3") window.open(linkArray[2]);
+                else if(this.id=="link4") window.open(linkArray[3]);
             });
             $("img").click(function(){
                 if(this.id=="example1") window.open(toSite[0]);
                 else if(this.id=="example2") window.open(toSite[1]);
                 else if(this.id=="example3") window.open(toSite[2]);
+                else if(this.id=="example4") window.open(toSite[3]);
             });
         });
 
